@@ -1,0 +1,490 @@
+/*  import google fonts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(128, 117, 5);
+}
+
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1500px;
+    padding: 0px 80px;
+    margin: auto;
+}
+
+.about .about-content,.vision .vision-content,.mission .mission-content,.ourstory .ourstory-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+section p{
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0 ,0,.4)
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo img{
+    width:120px;
+
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    font-style: normal;
+}
+.navbar .menu li a{
+    display: block;
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    line-height: 23px;
+    transition: color 0.3s ease;
+}
+.navbar .install-button{
+    background: linear-gradient(90deg, #FF8601 0%, #FF8801 41.32%, #FF9001 61.74%, #FF9D01 77.57%, #FFB000 90.96%, #FFC100 100%);
+    padding: 12px;
+    color: #fff;
+    border-radius:10px;
+    font-size: 14px;
+
+}
+
+.navbar .menu li a:hover{
+    color: #ff9d01;
+}
+.navbar.sticky .menu li a:hover{
+    color: #ff9d01;
+}
+
+
+
+
+
+/* menu btn styling */
+.menu-btn{
+    color: #000;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #ff9d01;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #000;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+
+/* about section styling */
+.about{
+    background:url(./images/aboutusvector.png) no-repeat center;
+    z-index: -1;
+    background-position:right ;
+    background-size: 100%;
+    margin: 0;
+}
+.about .about-content .right{
+    width: 40%;
+}
+.about .about-content .right img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    padding-left: 20px;
+}
+.about .about-content .left{
+    width: 60%;
+    padding-right: 80px;
+}
+
+
+
+.about .about-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .left p{
+    text-align: justify;
+}
+
+
+
+
+/* mission section */
+.mission{
+    padding-bottom: 0px;
+}
+.mission .mission-content .left{
+    width: 60%;
+    padding-right: 80px;
+}
+.mission .mission-content .left img{
+    
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    padding-left: 20px;
+}
+
+
+.mission .mission-content .right{
+    width: 40%;
+}
+
+.mission .mission-content .left p{
+    text-align: justify;
+}
+
+
+/* vision section styling */
+.vision{
+    margin: 0;
+    padding-top: 0px;
+}
+.vision .vision-content .left{
+    width: 40%;
+}
+.vision .vision-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    padding-right: 20px;
+}
+.vision .vision-content .right{
+    width: 60%;
+    padding-left: 80px;
+}
+.vision .vision-content .right p{
+    text-align: justify;
+}
+
+/* teams section styling */
+.teams{
+    color:#000;
+    background: #FFF6E6;
+}
+.teams .title{
+    color: #000;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+.title::before,
+.teams .title::before{
+    background: #fff;
+}
+.teams .carousel .card{
+    background: whitesmoke;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: #ff9d01;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff9d01;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #ff9d01!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #ff9d01!important;
+}
+
+
+
+
+
+
+/* our story section styling */
+.ourstory{
+    padding-top: 100px;
+}
+.ourstory .ourstory-content .left{
+    width: 60%;
+    padding-right: 80px;
+}
+.ourstory .ourstory-content .left img{
+    
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    padding-left: 20px;
+    
+}
+
+
+.ourstory .ourstory-content .right{
+    width: 40%;
+}
+
+.ourstory .ourstory-content .left p{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+/* responsive media query start */
+@media (max-width: 1104px) {
+
+    .mission .title,.vision .title ,.about .title,
+    .ourstory .title{
+        text-align: center;
+        justify-content: center;
+
+    }
+    .about .about-content .right img{
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+    .mission .mission-content .right img{
+        height: 100%;
+        width: 100%;
+    }
+    .vision .vision-content .left img{
+        height: 100%;
+        width: 100%;
+    }
+    .ourstory .ourstory-content .right img{
+        width: 90%;
+    }
+    .mission .mission-content .column .right img,.vision .vision-content,.about .about-content,
+    .ourstory .ourstory-content{
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+}
+
+
+@media (max-width: 949px){
+    section{
+        padding-bottom:25px ;
+    }
+    .mission{
+        padding-top: 0;
+    }
+    section p{
+        font-size: 20px;
+    }
+    .about{
+        background: none;
+    }
+    
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: rgb(164, 145, 145);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .max-width{
+        max-width: 95%;
+    }
+    .about .about-content .column,
+    .mission .mission-content .column,
+    .vision .vision-content .column,
+    .ourstory .ourstory-content .column{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about .about-content .left{
+        justify-content: center;
+        margin:  auto ;
+        padding-bottom: 10%;
+    }
+    .about .about-content .right,
+    .mission .mission-content .right,
+    .ourstory .ourstory-content .right{
+        flex: 100%;
+    }
+
+    .vision .vision-content img{
+        display: none;
+    }
+    .mission .mission-content .column,
+    .ourstory .ourstory-content .column{
+        display: inline;;
+    }
+
+
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
