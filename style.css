@@ -44,15 +44,14 @@ section{
 section .title{
     position: relative;
     text-align: left;
-    font-family: 'DM Sans', sans-serif;
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 64px;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
 section p{
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 19px;
@@ -68,7 +67,7 @@ section p{
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
@@ -94,7 +93,7 @@ section p{
 .navbar .menu li a{
     display: block;
     color: #000;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -255,7 +254,7 @@ section p{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .title::before,
 .teams .title::before{
@@ -283,7 +282,7 @@ section p{
     transform: scale(1.05);
 }
 .teams .carousel .card .text{
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: 550;
     margin: 10px 0 7px 0;
