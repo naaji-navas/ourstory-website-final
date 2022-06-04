@@ -41,6 +41,7 @@ section{
     justify-content: space-between;
 }
 section .title{
+    color: #192033;
     position: relative;
     text-align: left;
     font-family: 'DM Sans', sans-serif;
