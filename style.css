@@ -118,7 +118,7 @@ section p{
 .navbar.sticky .menu li a:hover{
     color: #ff9d01;
 }
-.navbar .menu li .install-button:hover{
+.navbar .menu li .install-button:hover,.navbar.navbar.sticky .menu li .install-button:hover{
     color: #f1f1f1;
 }
 
