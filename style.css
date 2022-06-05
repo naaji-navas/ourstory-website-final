@@ -117,8 +117,11 @@ section p{
 .navbar.sticky .menu li a:hover{
     color: #ff9d01;
 }
-.navbar .menu li .install-button:hover,.navbar.navbar.sticky .menu li .install-button:hover{
+.navbar .menu li .install-button,.navbar.navbar.sticky .menu li .install-button{
     color: #f1f1f1;
+}
+.navbar .menu li .install-button:hover,.navbar.navbar.sticky .menu li .install-button:hover{
+    color: #000;
 }
 
 
@@ -287,9 +290,7 @@ section p{
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
+
 .teams .carousel .card .text{
     font-family: 'DM Sans', sans-serif;
     font-size: 25px;
